@@ -7,7 +7,7 @@ function Card({blog}){
         <div className="rounded overflow-hidden shadow-md bg-white">
             <div className="absolute -mt-20 w-full flex justify-center">
                 <div className="h-32 w-32">
-                    <img src={'http://localhost:3000/' + blog.image} className="rounded-full object-cover h-full w-full shadow-md" />
+                    <img src={blog.image} className="rounded-full object-cover h-full w-full shadow-md" />
                 </div>
             </div>
             <div className="px-6 mt-16">
