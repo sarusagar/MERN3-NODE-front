@@ -10,7 +10,7 @@ function SingleBlog(){
      console.log(id)
 
     const fetchSingleBlog=async()=>{
-        const response = await axios.get("http://localhost:3000/blog/" + id)
+        const response = await axios.get("https://mern3-node-vynn.onrender.com/blog/" + id)
             setBlog(response.data.data)
     }
     useEffect(()=>{
@@ -18,7 +18,7 @@ function SingleBlog(){
     },[])
 
     const deleteThisPage = async()=>{
-        const response= await axios.delete("http://localhost:3000/blog/" + id)
+        const response= await axios.delete("https://mern3-node-vynn.onrender.com/blog/" + id)
         console.log(response)
         if(response.status ===200){
             alert("Page deleted successfully.")

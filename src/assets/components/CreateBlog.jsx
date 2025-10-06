@@ -28,7 +28,7 @@ console.log(data)
 const createBlog =async(e)=>{
     e.preventDefault()
     console.log("form submit")
-    const response =await axios.post("http://localhost:3000/blog",data,{
+    const response =await axios.post("https://mern3-node-vynn.onrender.com/blog",data,{
         headers:{
             "Content-Type":"multipart/form-data"
 
