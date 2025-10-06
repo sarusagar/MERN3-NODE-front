@@ -6,6 +6,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './assets/pages/Home'
 import SingleBlog from './assets/pages/SingleBlog'
 import CreateBlog from './assets/components/CreateBlog'
+import EditBlog from './assets/pages/EditBlog'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path='/' element={<Home/>} />
             <Route path='/create' element= {<CreateBlog/>} />
             <Route path='/blog/:id' element={<SingleBlog/>} />
+            <Route path='/edit/:id' element={<EditBlog/>} />
         </Routes>
       </BrowserRouter>
     </>
